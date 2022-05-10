@@ -1,0 +1,134 @@
+//road.js
+
+
+$(function(){
+    
+/*Scroll Event************************************/
+    $(window).scroll(function(){
+        scTop = $(this).scrollTop(); //스크롤 높이
+        console.log(scTop+'현재');
+        
+        //#btnTop 탑버튼 보이는 시점
+        secTop = $('section').offset().top;
+        /*console.log(bestTop);*/
+        
+        if(scTop>=secTop) {
+            $('#btnTop').fadeIn(600);
+        }else if(scTop<secTop) {
+            $('#btnTop').fadeOut(600);
+        }
+        
+        
+        //art_tit tit_txt
+        //article 총 수
+        var artL = $('article').length; 
+        /*console.log(artL+'artlength');*/
+        
+        //.tit_txt (소제목 설명 텍스트) slideDown으로 보여짐
+        for (i=0; i<artL; i++){
+            showTxt(i);
+        }
+        
+        //.tit_txt (소제목 설명 텍스트) slideDown 함수
+        function showTxt (titIdx){
+            
+            tit = $('article').eq(titIdx);
+            titTop = $('article').eq(titIdx).offset().top-700;
+            console.log(titTop);
+            
+            //현재 스크롤 높이 > (소제목 스크롤 높이-700) 일때 소제목 설명 텍스트가 slideDown
+            
+            if(scTop>titTop){ 
+                $(tit).children('.art_tit').children('.tit_txt').slideDown(900,'easeInOutQuint');
+            }
+        }
+        
+        
+        //알루미늄 캡
+        //현재 스크롤 높이 > (알루미늄캡 스크롤 높이-800) && 현재 스크롤 높이 < (알루미늄캡 스크롤 높이 +1000) 일때 나타남 
+        alumTop = $('#alumCap').offset().top-800;
+        console.log(alumTop+'알룸');
+        
+        if(scTop>(alumTop) && scTop<(alumTop+1000)){
+            $('#alumCap>img').addClass('active');
+        }else {
+            $('#alumCap>img').removeClass('active');
+        }
+        
+        
+    });//scroll
+/*//Scroll Event******************************************/
+    
+    
+/*#gnb Drop down****************************************/
+    
+    $('#gnb li').hover(
+        function(){
+            $(this).children('.subM').stop().slideDown(600);
+            $(this).addClass('selM').siblings().removeClass('selM');
+            
+        },
+        function(){
+            $(this).children('.subM').stop().slideUp(600);
+            $(this).removeClass('selM');
+            
+            $('#gnb').mouseleave(function(){
+                
+                $('#gnb>li.now').addClass('selM');
+                
+            });
+            
+            
+        });//hover() #gnb li
+    
+/*//#gnb Drop Down****************************************/
+    
+
+
+    
+/*#depth***************************************************/
+    
+    $('#depth li').hover(
+        function(){
+            $(this).addClass('selD').siblings().removeClass('selD');
+        },
+        function(){
+            $('#depth .now').addClass('selD').siblings().removeClass('selD');
+        });//hover #depth li
+    
+/*//#depth***************************************************/
+    
+        
+    
+/*#btnTop*********************************************************/
+    $('#btnTop').click(function(){ //맨 위로 이동
+        $('html').animate({
+            scrollTop: 0
+        },900);
+    });//click #btnTop
+    
+/*//#btnTop********************************************************/
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

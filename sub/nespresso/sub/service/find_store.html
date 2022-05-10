@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>매장찾기 | Nespresso</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--[if lt IE 9]>          
+	   <script src="js/html5shiv.js"></script>        
+    <![endif]-->
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/favicon.png">
+
+    <!--구글 웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/find_store.css">
+    
+    <!--js-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/find_store.js"></script>
+</head>
+<body>
+  
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTKLDXD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+   <header>
+        <div class="inner_header clearfix">
+            <h1 id="logo"><a href="../../index.html"><img src="images/header_logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul id="gnb">
+                    <li>
+                        <a href="../nespresso/effort.html">
+                            <span class="txt">NESPRESSO</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../nespresso/effort.html">네스프레소의 노력</a></li>
+                            <li><a href="../nespresso/road.html">커피의 여정</a></li>
+                            <li><a href="../nespresso/green_moment.html">그린 모먼트</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../product/coffee.html">
+                            <span class="txt">Product</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../product/coffee.html">커피</a></li>
+                            <li><a href="../product/machine.html">머신</a></li>
+                            <li><a href="../product/accessories.html">악세사리</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../professional/solution.html">
+                            <span class="txt">Professional</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../professional/solution.html">커피 솔루션</a></li>
+                            <li><a href="../professional/pro_product.html">프로페셔널 제품</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="selM now">
+                        <a href="#">
+                            <span class="txt">Service</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="find_store.html">매장찾기</a></li>
+                            <li><a href="whats_new.html">What's New</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="../recipes/recipes.html">
+                            <span class="txt">Recipes</span>
+                            <span class="sel"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="lnb">
+                <a href="#" class="login">로그인</a>
+                <a href="#" id="shopBag"><img src="images/ico_bag.png" alt="장바구니"></a>
+            </div>
+
+            <ul id="depth">
+                <li class="selD now"><a href="#">매장찾기</a></li>
+                <li><a href="whats_new.html">What's New</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <!--//inner_header-->
+        <div id="selStore">
+            <div class="container">
+                <h2>이용 목적에 맞는 매장 찾기</h2>
+                <ul id="storeChoice">
+                    <li class="selS"><a href="#">캡슐구매</a></li>
+                    <li><a href="#">머신구매</a></li>
+                    <li><a href="#">캡슐 재활용</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    
+    <section>
+       <div class="container">
+          <ul class="box_wrap">
+              <li id="capsule" class="box  selB">
+                  <h3><img src="images/store/capsule.png" alt="">캡슐 구매 매장 찾기 </h3>
+                  <form action="#">
+                      <input type="text" placeholder="서울특별시 강남구">
+                      <button>검색</button>
+                  </form>
+                  <p>이용 목적에 맞는 가까운 매장을 검색 해 보세요</p>
+              </li>
+              
+              <li id="machine" class="box">
+                  <h3><img src="images/store/machine.png" alt="">머신 구매 매장 찾기</h3>
+                  <form action="#">
+                      <input type="text" placeholder="서울특별시 강남구">
+                      <button>검색</button>
+                  </form>
+                  <p>이용 목적에 맞는 가까운 매장을 검색 해 보세요</p>
+              </li>
+              
+              <li id="recycle" class="box">
+                  <h3><img src="images/store/recycle.png" alt="">캡슐 재활용 매장 찾기</h3>
+                  <form action="#">
+                      <input type="text" placeholder="서울특별시 강남구">
+                      <button>검색</button>
+                  </form>
+                  <p>이용 목적에 맞는 가까운 매장을 검색 해 보세요</p>
+              </li>
+              
+          </ul>
+           
+       </div>
+        
+    </section>
+    
+    <footer>
+        <div class="inner_footer clearfix">
+            <div class="info">
+                <ul class="terms">
+                    <li><a href="#">판매이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">쿠키</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+
+                <p>
+                    상호: 네슬레코리아 유한책임회사 | 대표자: 카스텐 퀴메 | 사업자등록번호: 110-86-10100<br>
+                    통신판매업신고: 2014-서울서대문-0247 | 채무지급보증안내 | 대표번호:080-734-1111<br>
+                    이메일:club.korea@nespresso.com | 주소: 서울시 서대문구 충정로70 웨스트게이트타워 16층
+                </p>
+
+                <p>
+                    Nespresso S.A. 2021
+                </p>
+            </div>
+
+            <div class="logoSns">
+                <img src="images/footer_logo_white.png" alt="로고" class="footerLogo">
+                <ul class="sns">
+                    <li><a href="#"><img src="images/footer_sns_facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_pinterest.png" alt="핀터레스트"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

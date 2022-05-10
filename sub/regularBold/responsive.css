@@ -1,0 +1,481 @@
+@charset 'utf-8';
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/*font-family
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+/*float 해제하는 가상선택자*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*영문폰트 적용*/
+.eng {
+    font-family: 'PT Serif', serif;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+header h1 {
+    width: 30%;
+    float: left;
+    /*background-color: yellow;*/
+    text-align: center;
+}
+header h1 img {
+    width: 60%;
+    vertical-align: middle;
+}
+
+header nav {
+    width: 50%;
+    float: left;
+    text-align: center;
+   /* background-color: lightpink;*/
+    font-family: 'PT Serif', serif;
+}
+header nav ul li {
+    width: 20%;
+    display: inline-block;
+    font-size: 20px;
+    /*outline: 2px solid red;*/
+    padding-top: 2%;
+}
+header nav ul li a {
+    color: black;
+    padding-bottom: 6px;
+    transition: all 0.5s;
+}
+header nav ul li a:hover {
+    color: #00c5b4;
+    border-bottom: 3px solid #00c5b4;
+}
+
+header .m-menu {
+    display:none;
+}
+
+header .sns {
+    width: 20%;
+    float: right;
+    text-align: right;
+    /*background-color: darkseagreen;*/
+}
+header .sns>a>img {
+    width: 46px;
+}
+header .sns>a:first-child>img {
+    padding-right: 10px;
+}
+
+/*header 미디어 쿼리***************************************/
+/*@media (max-width: 768px) 태블릿*/
+@media (min-width: 0px) and (max-width: 480px) {
+    header {
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    header h1 {
+        width: 50%;
+    }
+    header h1 img {
+        width: 100%;
+    }
+    header nav ul {
+        display:none;
+    }
+    header nav .m-menu {
+        display: block;
+        width: 30%;
+        float: right;
+        /*outline: 3px solid lime;*/
+    }
+    header nav .m-menu img {
+        width: 70%;
+        margin-top: 10%;
+    }
+    header .sns {
+        display:none;
+    }
+}
+
+
+
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/***INTRO*************************************/
+.intro {
+    width: 100%;
+    height: 550px;
+    /*background-color: yellow;*/
+    background: url(images/rb_logo.png) no-repeat right bottom/550px;
+    position: relative;
+}
+.intro .left-box {
+    width: 34%;
+    position: absolute;
+    top: 34%;
+}
+.intro .left-box .des-en {
+    color: darkgray;
+    font-size: 1.4rem;
+    /*line-height: 30px;*/
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.intro .left-box .des-ko {
+    font-size: 1.2rem;
+}
+.intro .btn {
+    font-size: 1.2rem;
+    border: 2px solid #e64461;
+    border-radius: 6px;
+    padding: 14px;
+    color: #e64461;
+    position: absolute;
+    bottom: 14%;
+}
+.intro .btn:hover {
+    background-color: #e64461;
+    color: white;
+    font-weight: bold;
+}
+
+/**INTRO 미디어 쿼리***************************************/
+@media (min-width: 0px) and (max-width: 480px) {
+    section {
+        width: 90%;
+    }
+    .intro {
+        height: 700px;
+        background-size: 70%;
+        background-position: center bottom;
+    }
+    .intro .left-box {
+        width: 90%;
+        top: 10%;
+    }
+    .intro .left-box .des-en {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .intro .left-box .des-ko {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        word-break:keep-all;
+    }
+    .intro .btn {
+        padding: 10px;
+        bottom: 50%;
+        font-size: 1rem;
+    }
+}
+
+
+/***WORKS*************************************/
+.works {
+    margin-top: 80px;
+}
+.works .img-box {
+    width: 23%;
+    /*padding: 1%;*/
+    margin: 1%;
+    float: left;
+    overflow: hidden;
+}
+.works .img-box a {
+/*    display: block;*/
+}
+.works .img-box img {
+    width:100%;
+    display: block;
+    transition: all 0.5s;
+}
+.works .img-box img:hover {
+    transform: scale(1.5);
+}
+
+/**WORKS 미디어 쿼리***************************************/
+@media all and (max-width: 480px) {
+    .works {
+        margin-top: 50px;
+    }
+    .works .img-box {
+        width: 46%;
+        margin: 2%;
+    }
+}
+
+
+
+/***ABOUT*************************************/
+.about {
+    margin-top: 80px;
+    /*background-color: yellow;*/
+    height: 460px;
+    background: url(images/people_01-1.png) no-repeat bottom/contain;
+    /*font-family: 'PT Serif', serif;  */  
+    position: relative;
+}
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 0.6px;
+}
+.about p {
+    width: 54%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.about .btn-more {
+    font-size: 1.2rem;
+    padding: 14px;
+    border: 2px solid #00c5b4;
+    color: #00c5b4;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .btn-more:hover {
+    background-color: #00c5b4;
+    color: white;
+    font-weight: bold;
+}
+
+/**ABOUT 미디어 쿼리***************************************/
+@media all and (max-width: 480px) {
+    .about {
+        margin-top: 50px;
+        height: 360px;
+        background-position: center bottom;
+        background-size: 220%;
+    }
+    .about h2 {
+        font-size: 1.6rem;
+    }
+    .about p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .about .btn-more {
+        padding: 10px;
+        font-size: 1rem;
+        /*top: 50%;*/
+    }
+}
+
+
+/***NEWS*************************************/
+.news {
+    margin-top: 80px;
+}
+.news h2 {
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+.news>p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.news .box {
+    width: 32%;
+    margin-right: 1%;
+    float: left;
+   /* outline: 2px solid red;*/
+}
+.news .box img {
+    width: 100%;
+}
+.news .box .title a {
+    color: #333;
+    margin-top: 40px;
+    height: 40px;
+}
+.news .box .title a:hover {
+    color: darkseagreen;
+    text-decoration: underline;
+}
+.news .box .date {
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+/**NEWS 미디어 쿼리***************************************/
+@media all and (max-width: 480px) {
+    .news {
+        margin-top: 50px;
+    }
+    .news h2 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .news>p {
+        width: 90%;
+        word-break:keep-all;
+        font-size: 1rem;
+        margin-left: 4%;
+    }
+    .news .box {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .news .box .title {
+        margin-bottom: 10px;
+    }
+}
+
+
+/***CONTACT*************************************/
+.contact {
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background: url(images/rb-03.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.contact h2 {
+    color: white;
+    font-size: 3rem;
+    padding-top: 80px;
+}
+.contact p {
+    font-size: 1.2rem;
+    padding-top: 30px;
+    color: white;
+}
+.contact .btn-more2 {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    padding: 14px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    /*margin-left: -57.9845px;*/
+    transform: translateX(-50%);
+}
+.contact .btn-more2:hover {
+    background-color: black;
+    border: 2px solid #000;
+    font-weight: bold;
+}
+
+/**CONTACT 미디어 쿼리***************************************/
+@media all and (max-width: 480px) {
+    .contact {
+        margin-top: 50px;
+        height: 300px;
+        background-position: center;
+    }
+    .contact h2 {
+        padding-top: 50px;
+        font-size: 2.4rem;
+    }
+    .contact p {
+        font-size: 1.1rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .contact .btn-more2 {
+        font-size: 1rem;
+        padding: 10px;
+        top: 64%;
+    }
+}
+
+
+footer {
+    width: 80%;
+    margin:0 auto;
+    position: relative;
+    /*background-color: darkseagreen;*/
+}
+footer .footer-box {
+    width: 33.3%;
+    float: left;
+    margin: 60px 0;
+    /*outline: 3px solid lime;*/
+}
+footer .footer-box h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+footer .footer-box p {
+    font-size: 0.9em;
+    color: darkgray;
+}
+footer .top {
+    clear: both;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+/**FOOTER 미디어 쿼리***************************************/
+@media all and (max-width: 480px) {
+    footer {
+        padding-bottom: 60px;
+    }
+    footer .footer-box {
+        width: 90%;
+        float: none;
+        margin: 30px 0 0;
+    }
+    footer .footer-box h2 {
+        margin-bottom: 10px;
+    }
+    
+    footer .top {
+        top: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+

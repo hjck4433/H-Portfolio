@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+header {
+    width: 100%;
+    background: rgb(255,255,255);
+    border-bottom: 1px solid rgb(238,238,238);
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 9999;
+}
+
+header .lnb {
+    /*width: 100%;*/
+    background-color: lightgrey;
+    height: 40px;
+    line-height: 40px;
+}
+header .lnb .inner_lnb {
+    width: 1200px;
+    background-color: yellow;
+    margin: 0 auto;
+    font-size: 14px;
+}
+header .lnb .inner_lnb ul {
+    float: right;
+    /*height: 40px;*/
+    /*outline: 3px solid lime;*/
+}
+header .lnb .inner_lnb ul li {
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    letter-spacing: -1px;
+}
+header .lnb .inner_lnb ul li:last-child {
+    margin-right: 0;
+    width: 60px;
+    background: rgb(47,28,17) url(../img/ico_user_info_line.png) no-repeat center;
+    text-indent: -9999px;
+}
+header .lnb .inner_lnb ul li>a {
+    display: block;
+    color: #333;
+}
+header .lnb .inner_lnb ul li>a:hover {
+    color: rgb(47,28,17);
+    font-weight: bold;
+}
+
+header .inner_header {
+    width: 1200px;
+    height: 100px;
+    /*background-color: yellow;*/
+    margin: 0 auto;
+}
+header .inner_header h1 {
+    /*width: 70px;*/
+    width: 100px;
+    height: 100px;
+    /*background-color: indianred;*/
+    padding: 15px 0;
+    box-sizing: border-box;
+    float: left;
+}
+header .inner_header h1 a img {
+    /*width: 100%*/
+    height: 70px;
+}
+
+header .inner_header nav {
+    /*outline: 3px solid red;*/
+    float: left;
+    margin-left: 100px;
+}
+header .inner_header nav ul li {
+    float: left;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-family: Arial;
+    padding: 0 30px;
+}
+header .inner_header nav ul li a {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(47,28,17);
+    letter-spacing: -0.2px;
+}
+header .inner_header nav ul li a:hover {
+    color: rgb(207,102,26);
+}
+
+#btnSearch {
+    float: right;
+}
+#btnSearch a {
+    width: 20px;
+    height: 100px;
+    display: block;
+    text-indent: -9999px;
+    background: url(../img/ico_search.png) no-repeat center;
+}

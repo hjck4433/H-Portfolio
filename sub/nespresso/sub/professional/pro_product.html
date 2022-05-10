@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>프로페셔널 제품 | Nespresso</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--[if lt IE 9]>          
+	   <script src="js/html5shiv.js"></script>        
+    <![endif]-->
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/favicon.png">
+
+    <!--구글 웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pro_product.css">
+
+    <!--js-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/pro_product.js"></script>
+
+</head>
+
+<body>
+   
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTKLDXD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   
+    <header>
+        <div class="inner_header clearfix">
+            <h1 id="logo"><a href="../../index.html"><img src="images/header_logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul id="gnb">
+                    <li>
+                        <a href="../nespresso/road.html">
+                            <span class="txt">NESPRESSO</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../nespresso/effort.html">네스프레소의 노력</a></li>
+                            <li><a href="../nespresso/road.html">커피의 여정</a></li>
+                            <li><a href="../nespresso/green_moment.html">그린 모먼트</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../product/coffee.html">
+                            <span class="txt">Product</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../product/coffee.html">커피</a></li>
+                            <li><a href="../product/machine.html">머신</a></li>
+                            <li><a href="../product/accessories.html">악세사리</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="selM now">
+                        <a href="solution.html">
+                            <span class="txt">Professional</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="solution.html">커피 솔루션</a></li>
+                            <li><a href="pro_product.html">프로페셔널 제품</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../service/find_store.html">
+                            <span class="txt">Service</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../service/find_store.html">매장찾기</a></li>
+                            <li><a href="../service/whats_new.html">What's New</a></li>
+                            <li><a href="../service/faq.html">FAQ</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="../recipes/recipes.html">
+                            <span class="txt">Recipes</span>
+                            <span class="sel"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="lnb">
+                <a href="#" class="login">로그인</a>
+                <a href="#" id="shopBag"><img src="images/ico_bag.png" alt="장바구니"></a>
+            </div>
+
+            <ul id="depth">
+                <li><a href="solution.html">커피 솔루션</a></li>
+                <li class="selD now"><a href="#">프로페셔널 제품</a></li>
+            </ul>
+        </div>
+        <!--//inner_header-->
+        <div id="btn_choice">
+            <ul>
+                <li class="btn_coffee selT" data-seq="0">커피</li>
+                <li class="btn_machine" data-seq="1">머신</li>
+            </ul>
+        </div>
+
+    </header>
+    
+    <div class="main">
+        <div class="m_container clearfix">
+           <div id="m_coffee" class="con">
+               <div class="main_banner">
+                <div class="container">
+                    <h2>최상의 커피 경험</h2>
+                    <p>
+                       모든 네스프레소 커피는 네스프레소 커피 전문가들의 손길을 거쳐 독특하고<br>
+                       복합적인 맛과 향을 지닌 커피로 탄생합니다.
+                    </p>
+                    <h3>다양한 취향을 만족시키는 네스프레소 커피</h3>
+
+                    <span>당신이 원하는 커피를 찾아보세요</span>
+                </div>
+            </div>
+
+            <div class="cap_nav">
+                <ul class="container">
+                    <li class="selC"><a href="#ristretto">리스트레토</a></li>
+                    <li><a href="#espresso">에스프레소</a></li>
+                    <li><a href="#lungo">룽고</a></li>
+                    <li><a href="#decafe">디카페나토</a></li>
+                    <li><a href="#origin">오리진</a></li>
+                    <li><a href="#variation">베리에이션</a></li>
+                    <li><a href="#milk">밀크 크리에이션</a></li>
+                </ul>
+            </div>
+           </div>
+           
+           <div id="m_machine" class="con">
+              <div class="main_banner">
+                <div class="container">
+                    <h2>품격있는 커피 경험</h2>
+                    <p>
+                        최신 기술과 디자인을 적용한 프로페셔널 커피 머신으로
+                        <br>
+                        네스프레소 커피의 다양하고 개성있는 아로마를 완벽하게 즐길 수 있습니다.
+                    </p>
+                    <h3>당신의 비즈니스를 성공으로 이끌 이상적인 커피 파트너</h3>
+
+                    <span>당신이 원하는 머신을 찾아보세요</span>
+                </div>
+            </div>
+               
+           </div>
+            
+        </div>
+    </div>
+
+
+    <section class="clearfix">
+
+        <div id="coffee" class="big_container">
+
+            <div class="container list" id="ristretto">
+                <div class="tit clearfix">
+                    <h2>리스트레토</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 9-12</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_ristretto.png" alt="리스트레토">
+                            <span>리스트레토 25ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 12</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee01.jpg" alt="리스트레토 인텐소">
+                        </div>
+
+                        <div class="info">
+                            <h3>리스트레토 인텐소</h3>
+                            <p class="flavor">우디향 / 스파이시향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--.//box 리스트레토 인텐소-->
+
+                    <li class="box">
+                        <span>강도 9</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee02.jpg" alt="리스트레토">
+                        </div>
+
+                        <div class="info">
+                            <h3>리스트레토</h3>
+                            <p class="flavor">진한 로스팅향 / 코코아향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--.//box 리스트레토-->
+
+                </ul>
+                <!--//.box_wrap-->
+                
+                
+            </div>
+            <!--//.container #ristretto-->
+
+
+            <div class="container list" id="espresso">
+                <div class="tit clearfix">
+                    <h2>에스프레소</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 6-7</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_espresso.png" alt="에스프레소">
+                            <span>에스프레소 40ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 7</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee03.jpg" alt="에스프레소 포르테">
+                        </div>
+
+                        <div class="info">
+                            <h3>에스프레소 포르테</h3>
+                            <p class="flavor">강렬한 로스팅향 / 과일</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--//에스프레소 포르테-->
+
+                    <li class="box">
+                        <span>강도 6</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee04.jpg" alt="에스프레소 레제로">
+                        </div>
+
+                        <div class="info">
+                            <h3>에스프레소 레제로</h3>
+                            <p class="flavor">곡물향 / 코코아향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--에스프레소 레제로-->
+                    
+
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #espresso-->
+
+
+            <div class="container list" id="lungo">
+                <div class="tit clearfix">
+                    <h2>룽고</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 2-4</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_lungo.png" alt="룽고">
+                            <span>룽고 110ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 4</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee05.jpg" alt="룽고 포르테">
+                        </div>
+
+                        <div class="info">
+                            <h3>룽고 포르테</h3>
+                            <p class="flavor">과일향 / 강한 로스팅향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1슬리브(10캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--룽고 포르테-->
+
+                    <li class="box">
+                        <span>강도 2</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee06.jpg" alt="룽고 레제로">
+                        </div>
+
+                        <div class="info">
+                            <h3>룽고 레제로</h3>
+                            <p class="flavor">섬세한 꽃</p>
+                            <p class="price">
+                                27,500원
+                                <span>1슬리브(10캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--룽고 레제로-->
+
+                    
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #lungo-->
+
+
+            <div class="container list" id="decafe">
+                <div class="tit clearfix">
+                    <h2>디카페나토</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 4-7</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_espresso.png" alt="에스프레소">
+                            <span>에스프레소 40ml</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_lungo.png" alt="룽고">
+                            <span>룽고 110ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 7</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee07.jpg" alt="에스프레소 디카페나토">
+                        </div>
+
+                        <div class="info">
+                            <h3>에스프레소 디카페나토</h3>
+                            <p class="flavor">코코아향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--에스프레소 디카페나토-->
+
+                    <li class="box">
+                        <span>강도 4</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee07.jpg" alt="룽고 디카페나토">
+                        </div>
+
+                        <div class="info">
+                            <h3>룽고 디카페나토</h3>
+                            <p class="flavor">복합적인 향</p>
+                            <p class="price">
+                                27,500원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--룽고 디카페나토-->
+
+                    
+
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #decafe-->
+
+
+            <div class="container list" id="origin">
+                <div class="tit clearfix">
+                    <h2>오리진</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 4-10</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_ristretto.png" alt="에스프레소">
+                            <span>리스트레토 25ml</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_espresso.png" alt="에스프레소">
+                            <span>에스프레소 40ml</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_lungo.png" alt="룽고">
+                            <span>룽고 110ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 10</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee09.jpg" alt="인디아">
+                        </div>
+
+                        <div class="info">
+                            <h3>인디아</h3>
+                            <p class="flavor">스파이시향</p>
+                            <p class="price">
+                                31,350원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--인디아-->
+
+                    <li class="box">
+                        <span>강도 6</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee10.jpg" alt="과테말라">
+                        </div>
+
+                        <div class="info">
+                            <h3>과테말라</h3>
+                            <p class="flavor">구운 맥아향</p>
+                            <p class="price">
+                                31,350원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--과테말라-->
+
+                    <li class="box">
+                        <span>강도 4</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee11.jpg" alt="브라질">
+                        </div>
+
+                        <div class="info">
+                            <h3>브라질</h3>
+                            <p class="flavor">구운 곡물향</p>
+                            <p class="price">
+                                31,350원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--브라질-->
+
+                    
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #origin-->
+
+            <div class="container list" id="variation">
+                <div class="tit clearfix">
+                    <h2>베리에이션</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/ico_strength.png" alt="강도">
+                            <span>강도 7</span>
+                        </li>
+                        <li>
+                            <img src="images/product/coffee/cup_espresso.png" alt="에스프레소">
+                            <span>에스프레소 40ml</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>강도 7</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee12.jpg" alt="에스프레소 바닐라">
+                        </div>
+
+                        <div class="info">
+                            <h3>에스프레소 바닐라</h3>
+                            <p class="flavor">풍부한 바닐라향</p>
+                            <p class="price">
+                                31,350원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--에스프레소 바닐라-->
+
+                    <li class="box">
+                        <span>강도 7</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee13.jpg" alt="에스프레소 캐러멜">
+                        </div>
+
+                        <div class="info">
+                            <h3>에스프레소 캐러멜</h3>
+                            <p class="flavor">달콤한 캐러멜향</p>
+                            <p class="price">
+                                31,350원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--에스프레소 캐러멜-->
+
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #variation-->
+
+            <div class="container list" id="milk">
+                <div class="tit clearfix">
+                    <h2>밀크 크리에이션</h2>
+                    <ul>
+                        <li>
+                            <img src="images/product/coffee/cup_cappuccino.png" alt="룽고">
+                            <span>카푸치노</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+                        <span>카푸치노</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee14.jpg" alt="비앙코 인텐소">
+                        </div>
+
+                        <div class="info">
+                            <h3>비앙코 인텐소</h3>
+                            <p class="flavor">진한 로스팅향</p>
+                            <p class="price">
+                                29,700원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--비앙코 인텐소-->
+
+                    <li class="box">
+                        <span>카푸치노</span>
+
+                        <div class="photo">
+                            <img src="images/product/coffee/coffee15.jpg" alt="비앙코 델리카토">
+                        </div>
+
+                        <div class="info">
+                            <h3>비앙코 델리카토</h3>
+                            <p class="flavor">캐러멜향 / 비스킷향</p>
+                            <p class="price">
+                                29,700원
+                                <span>1박스(50캡슐)</span>
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--비앙코 델리카토-->
+
+                </ul>
+                <!--//.box_wrap-->
+            </div>
+            <!--//.container #milk-->
+
+        </div>
+        <!--//#ol-->
+
+
+
+
+
+        <div id="machine" class="big_container">
+
+            <div class="container list" id="espresso_vo">
+                <div class="tit clearfix">
+
+                    <h2>프로페셔널 머신</h2>
+                    
+                </div>
+
+                <ul class="box_wrap">
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine01.jpg" alt="제니우스">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>
+                        </ul>
+
+                        <div class="info">
+                            <h3>제니우스</h3>
+                            <p class="price">
+                                699,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--제니우스-->
+
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine02.jpg" alt="네스프레소 모멘토 100">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <!--<li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>-->
+                        </ul>
+
+                        <div class="info">
+                            <h3>네스프레소 모멘토 100</h3>
+                            <p class="price">
+                                1,650,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--네스프레소 모멘토 100-->
+
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine03.jpg" alt="제미니 223">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>
+                        </ul>
+
+                        <div class="info">
+                            <h3>제미니 223</h3>
+                            <p class="price">
+                                2,530,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--제미니 223-->
+
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine04.jpg" alt="네스프레소 모멘토 200">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <!--<li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>-->
+                        </ul>
+
+                        <div class="info">
+                            <h3>네스프레소 모멘토 200</h3>
+                            <p class="price">
+                                2,970,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--네스프레소 모멘토 200-->
+
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine05.jpg" alt="아길라 220">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>
+                        </ul>
+
+                        <div class="info">
+                            <h3>아길라 220</h3>
+                            <p class="price">
+                                13,200,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--아길라 220-->
+
+                    <li class="box">
+
+                        <div class="photo">
+                            <img src="images/product/machine/machine06.jpg" alt="아길라 440">
+                        </div>
+                        
+                        <ul class="biz">
+                            <li><b>오피스</b></li>
+                            <li><b>호텔</b></li>
+                            <li><b>카페&amp;<br>레스토랑</b></li>
+                            <li><b>파인<br>다이닝</b></li>
+                        </ul>
+
+                        <div class="info">
+                            <h3>아길라 440</h3>
+                            <p class="price">
+                                24,200,000원
+                            </p>
+                        </div>
+
+                        <div class="btn">
+                            <a href="#" class="cart">장바구니</a>
+                            <a href="#" class="buy">구매하기</a>
+                        </div>
+
+                    </li>
+                    <!--//.box-->
+                    <!--아길라 440-->
+
+                    
+                </ul>
+                <!--//.box_wrap-->
+
+            </div>
+            <!--//.container-->
+            <!--#espresso_vo-->
+
+        </div>
+        <!--//#vo-->
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="inner_footer clearfix">
+            <div class="info">
+                <ul class="terms">
+                    <li><a href="#">판매이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">쿠키</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+
+                <p>
+                    상호: 네슬레코리아 유한책임회사 | 대표자: 카스텐 퀴메 | 사업자등록번호: 110-86-10100<br>
+                    통신판매업신고: 2014-서울서대문-0247 | 채무지급보증안내 | 대표번호:080-734-1111<br>
+                    이메일:club.korea@nespresso.com | 주소: 서울시 서대문구 충정로70 웨스트게이트타워 16층
+                </p>
+
+                <p>
+                    Nespresso S.A. 2021
+                </p>
+            </div>
+
+            <div class="logoSns">
+                <img src="images/footer_logo_white.png" alt="로고" class="footerLogo">
+                <ul class="sns">
+                    <li><a href="#"><img src="images/footer_sns_facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_pinterest.png" alt="핀터레스트"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="btnTop"><img src="images/btn_top.png" alt="맨 위로"></div>
+</body>
+
+</html>

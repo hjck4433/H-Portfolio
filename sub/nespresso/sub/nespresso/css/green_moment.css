@@ -1,0 +1,633 @@
+@charset "utf-8";
+
+/*구글 웹폰트
+font-family: 'Bebas Neue', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+}
+
+/*header CSS*/
+header {
+    width: 100%;
+    height: 140px;
+    background-color: rgb(35,31,32);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 26px;
+}
+.inner_header {
+    width: 100%;
+    max-width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+#logo {
+    width: 15%;
+    height: 100px;
+    float: left;
+    /*outline: 3px solid lime;*/
+}
+#logo a {
+    display: inline-block;
+    height: 100px;
+    /*outline: 2px solid red;*/
+}
+#logo img {
+    height: 100px;
+    display: block;
+    
+}
+nav {
+    width: 75%;
+    height: 100px;
+    box-sizing: border-box;
+    float:left;
+}
+#gnb {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+#gnb>li {
+    width: 20%;
+    height: 100px;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    /*outline: 2px solid yellow;*/
+    position:relative;
+    box-sizing: border-box;
+}
+#gnb>li:last-child{
+    padding-right: 5%;
+}
+#gnb>li>a {
+    /*outline: 3px solid red;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    letter-spacing: .55px;
+}
+#gnb>li>a>span.txt, .selM>a>span.sel {
+    transition: all .6s ease-out;
+}
+
+/*선택된 메뉴 css*/
+.selM>a>span.txt {
+    position: relative;
+    /*outline: 3px solid lime;*/
+    z-index: 3;
+    font-size: 1.2em;
+    
+}
+.selM>a>span.sel {
+    width: 100%;
+    height: 46%;
+    position: absolute;
+    left: 3%;
+    top: 48%;
+    background-color: rgba(214,162,57,0.6);
+    /*outline: 3px solid yellow;*/
+    
+}
+
+/*slide down menu CSS*/
+.subM {
+    width: 100%;
+    position: absolute;
+    /*padding-bottom: 14px;*/
+    top: 100%;
+    left: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -.9px;
+    background: rgb(35,31,32);
+    /*outline: 2px solid red;*/
+    display:none;
+    white-space: nowrap;
+    z-index: 10001;
+}
+/*#gnb>li:nth-child(4) #subM{
+    display: block;
+}*/
+
+.subM>li:hover {
+    background: rgb(214,162,57);
+}
+.subM>li>a {
+    display:block;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#lnb {
+    width: 10%;
+    height: 100px;
+    float: right;
+    text-align: right;
+    /*outline: 3px solid blue;*/
+    font-size: .6em;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    line-height: 100px;
+}
+.login {
+    color: rgb(255,255,255);
+    opacity: 0.6;
+    padding-right: 20%;
+}
+.login:hover {
+    opacity: 1;
+}
+#shopBag img {
+    position: relative;
+    top: 10px;
+}
+
+#depth {
+    width: 100%;
+    height: 40px;
+    float: left;
+    /*outline: 3px solid red;*/
+}
+#depth li {
+    width: 140px;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    background-color: #343131;
+    margin-right: 2px;
+}
+#depth li a {
+    display:block;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/*선택된 depth*/
+#depth li.selD {
+    background: #886b41;
+}
+#depth li:hover {
+    background: #886b41;
+}
+/*//header css********************************************************/
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #161314;
+}
+.bar {
+    width: 60px;
+    margin: 40px auto 40px;
+    height: 2px;
+    background-color: #d6a239;
+    display:block;
+}
+.art_tit {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.art_tit h2{
+    padding-top: 120px;
+    font-size: 52px;
+    letter-spacing: -.5px;
+}
+.art_tit .bar {
+    margin: 50px auto 70px;
+}
+.art_tit p.tit_txt {
+    font-size: 24px;
+    letter-spacing: -.8px;
+    font-weight: 600;
+    color: #546223;
+    line-height: 1.4;
+    display:none;
+}
+p.desc {
+    font-size: 20px;
+    letter-spacing: -.8px;
+    line-height: 1.6;
+}
+p.desc>span {
+    font-weight: 600;
+}
+p.desc>b {
+    font-size: 20px !important;
+    display:inline !important;
+}
+
+
+/*main css******************************************************/
+.main {
+    padding-top: 140px;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/green/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main .container {
+    background-color: transparent;
+}
+.main .box {
+    width: 500px;
+    height: 450px;
+    margin: 75px auto;
+    background-color: rgba(255,255,255,.7);
+    padding: 30px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main .box h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: -1.2px;
+    color: #546223;
+    margin-bottom: 20px;
+}
+.main .box h3 {
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: -.5px;
+    color: #546223;
+}
+.main .box p {
+    font-size: 18px;
+    letter-spacing: -1.2px;
+    line-height: 1.6;
+}
+
+/*//main css***********************************************/
+
+
+/*#new_start css***********************************************/
+#new_start {
+    width: 100%;
+    background-color: #f5f4f2;
+}
+#new_start .container {
+    position: relative;
+    padding-bottom: 150px;
+}
+#new_start .box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+    overflow:hidden;
+}
+#new_start .box img {
+    display:inline-block;
+    width: 100%;
+}
+#new_start .box .txt_box {
+    font-size: 18px;
+    position: absolute;
+    /*outline: 2px solid red;*/
+    width: /*340px;*/ 29%;
+    line-height: 1.4;
+    transition: all .9s ease-in-out;
+    letter-spacing: -.8px;
+    
+}
+#new_start .box .txt_box.alum {
+    text-align: right;
+    top: 0;
+    left: -50%;
+} 
+#new_start .box .txt_box.coffee {
+    text-align: left;
+    top: 0;
+    right: -50%;
+} 
+#new_start .box .txt_box h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    letter-spacing: 0;
+}
+#new_start .box .txt_box h3 span {
+    font-family: 'Bebas Neue', cursive;
+    color: #546223;
+    font-size: 30px;
+    display:block;
+}
+
+#new_start .box.active .txt_box.alum {
+    left: -3%;
+}
+#new_start .box.active .txt_box.coffee {
+    right: -3%;
+}
+
+
+
+#new_start .container>b {
+    display:block;
+    margin-bottom: 80px;
+    color: #546223;
+    font-size: 28px;
+}
+#new_start ul {
+    width: 100%;
+}
+#new_start ul li {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+    font-size: 18px;
+}
+#new_start ul li span {
+    display:block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 14px;
+    overflow:hidden;
+}
+#new_start ul li img {
+    display:block;
+    width: 100%;
+    -webkit-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+#new_start ul li:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#new_start .container .leaf1 {
+    position: absolute;
+    top: 250px;
+    left: 56px;
+    height: 150px;
+}
+
+/*//#new_start css***********************************************/
+
+
+
+
+/*#campaign css***********************************************/
+#campaing {
+    width: 100%;
+}
+#campaign .container {
+    position: relative;
+    padding-bottom: 150px;
+}
+#campaign .con-wrap {
+    margin-bottom: 50px;
+}
+#campaign .con-wrap img {
+    display:inline-block;
+}
+#campaign .con-wrap img:first-child {
+    margin-bottom: 80px;
+}
+#campaign .con-wrap img.bag {
+    opacity: 0;
+    transition: all .9s ease-in-out;
+}
+#campaign .con-wrap.active img.bag{
+    opacity: 1;
+}
+#campaign .desc {
+    margin-bottom: 80px;
+}
+#campaign ul {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-bottom: 100px; 
+}
+#campaign ul li {
+    float: left;
+    width: 25%;
+    vertical-align: top;
+}
+#campaign ul li img {
+    display:inline-block;
+    height: 80px;
+    margin-bottom: 10px;
+}
+#campaign ul li span {
+    font-size: 18px;
+    display: block;
+}
+#campaign .container>b {
+    display:block;
+    color: #546223;
+    font-size: 28px;
+}
+#campaign .leaf2 {
+    position: absolute;
+    right: -240px;
+    top: -50px;
+}
+
+/*//#campaign css***********************************************/
+
+
+
+
+
+/*#greenfund css***********************************************/
+#greenfund {
+    width: 100%;
+    background-color: #f5f4f2;
+    position: relative;
+}
+#greenfund .container {
+    position: relative;
+    padding-bottom: 250px;
+}
+
+#greenfund ul {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#greenfund ul li {
+    display:inline-block;
+    width: 30%;
+    margin: 0 1%;
+}
+#greenfund ul li img {
+    display:block;
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+#greenfund ul li img:hover {
+    opacity: .6;
+}
+#greenfund .desc {
+    margin-bottom: 70px;
+}
+#greenfund .finB {
+    display:block;
+    color: #546223;
+    font-size: 32px;
+}
+#greenfund .leaf3, #greenfund .leaf4, #greenfund .leafB {
+    position: absolute;
+}
+.leaf4 {
+    right: -300px;
+    top: 20%;
+}
+.leafB {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 150px;
+}
+.leaf3 {
+    left: 0;
+    top: -430px;
+    height: 500px;
+}
+/*//#greenfund css***********************************************/
+
+
+
+
+
+
+
+
+/*footer CSS************************************************/
+footer {
+    width: 100%;
+    background: #000;
+}
+footer .inner_footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 1%;
+    padding-bottom: 70px;
+}
+.inner_footer .info {
+    width: 60%;
+    float: left;
+    color: #fff;
+    /*outline: 2px solid yellow;*/
+}
+.inner_footer .info .terms {
+    width: 96%;
+}
+.inner_footer .info .terms li {
+    display:inline-block;
+    margin-right: 1%;
+    padding-left: 2%;
+    position: relative;
+}
+.inner_footer .info .terms li:after {
+    content: "";
+    display:block;
+    width: 2px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.inner_footer .info .terms li:first-child {
+    padding: 0;
+}
+.inner_footer .info .terms li:first-child:after {
+    display:none;
+}
+
+.inner_footer .info .terms li a {
+    color: #fff;
+}
+.inner_footer .info .terms li a:hover {
+    color: rgb(214,162,57);
+}
+
+.inner_footer .info p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.inner_footer .logoSns {
+    width: 40%;
+    float: right;
+    text-align: center;
+    /*outline: 2px solid lime;*/
+}
+.inner_footer .logoSns .footerLogo {
+    width: 70%;
+    margin: 0 auto;
+}
+.inner_footer .logoSns .sns {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.inner_footer .logoSns .sns li {
+    width: 16%;
+    margin: 0 2%;
+    float: left;
+}
+.inner_footer .logoSns .sns li a {
+    display:block;
+}
+.inner_footer .logoSns .sns li a img {
+    height: 40px;
+}
+
+/*//footer CSS************************************************/
+
+
+/*btn CSS*********************************************/
+
+#btnTop {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    right: 8%;
+    height: 0;
+    z-index: 999;
+    cursor: pointer;
+    opacity: .3;
+}
+#btnTop:hover {
+    opacity: 1;
+}

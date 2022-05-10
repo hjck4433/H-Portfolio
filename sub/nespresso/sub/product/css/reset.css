@@ -1,0 +1,30 @@
+@charset "utf-8";
+    
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border:none;
+}
+ul,ol,li {
+    list-style:none;
+}
+ul::after, ol::after, li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}

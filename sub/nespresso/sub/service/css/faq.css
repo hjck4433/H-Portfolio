@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/*구글 웹폰트
+font-family: 'Bebas Neue', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*header CSS*/
+header {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(35,31,32);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 26px;
+}
+.inner_header {
+    width: 100%;
+    max-width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+#logo {
+    width: 15%;
+    height: 100px;
+    float: left;
+    /*outline: 3px solid lime;*/
+}
+#logo a {
+    display: inline-block;
+    height: 100px;
+    /*outline: 2px solid red;*/
+}
+#logo img {
+    height: 100px;
+    display: block;
+    
+}
+nav {
+    width: 75%;
+    height: 100px;
+    box-sizing: border-box;
+    float:left;
+}
+#gnb {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+#gnb>li {
+    width: 20%;
+    height: 100px;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    /*outline: 2px solid yellow;*/
+    position:relative;
+    box-sizing: border-box;
+}
+#gnb>li:last-child{
+    padding-right: 5%;
+}
+#gnb>li>a {
+    /*outline: 3px solid red;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    letter-spacing: .55px;
+}
+#gnb>li>a>span.txt, .selM>a>span.sel {
+    transition: all .6s ease-out;
+}
+
+/*선택된 메뉴 css*/
+.selM>a>span.txt {
+    position: relative;
+    /*outline: 3px solid lime;*/
+    z-index: 3;
+    font-size: 1.2em;
+    
+}
+.selM>a>span.sel {
+    width: 100%;
+    height: 46%;
+    position: absolute;
+    left: 3%;
+    top: 48%;
+    background-color: rgba(214,162,57,0.6);
+    /*outline: 3px solid yellow;*/
+    
+}
+
+/*slide down menu CSS*/
+.subM {
+    width: 100%;
+    position: absolute;
+    /*padding-bottom: 14px;*/
+    top: 100%;
+    left: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -.9px;
+    background: rgb(35,31,32);
+    /*outline: 2px solid red;*/
+    display:none;
+    white-space: nowrap;
+    z-index: 10001;
+}
+/*#gnb>li:nth-child(4) #subM{
+    display: block;
+}*/
+.subM>li:hover {
+    background: rgb(214,162,57);
+}
+.subM>li>a {
+    display:block;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#lnb {
+    width: 10%;
+    height: 100px;
+    float: right;
+    text-align: right;
+    /*outline: 3px solid blue;*/
+    font-size: .6em;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    line-height: 100px;
+}
+.login {
+    color: rgb(255,255,255);
+    opacity: 0.6;
+    padding-right: 20%;
+}
+.login:hover {
+    opacity: 1;
+}
+#shopBag img {
+    position: relative;
+    top: 10px;
+}
+
+#depth {
+    width: 100%;
+    height: 40px;
+    float: left;
+    /*outline: 3px solid red;*/
+}
+#depth li {
+    width: 120px;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    background-color: #343131;
+    margin-right: 2px;
+}
+#depth li a {
+    display:block;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/*선택된 depth*/
+#depth li.selD {
+    background: #886b41;
+}
+#depth li:hover {
+    background: #886b41;
+}
+
+
+#faqChoice {
+    height: 60px;
+    background: #886b41
+}
+
+#faqChoice .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper #list {
+    float: left;
+    width: 20%;
+    height:30px;
+    margin: 15px 20px 0 12px;
+    outline: none;
+    border: none;
+    padding: 3px 0 0 15px;
+    background: #886b41;
+    color: #fff;
+    border-bottom: 2px solid rgba(35,31,32,.5);
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+}
+.wrapper #search {
+    float: left;
+    height: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+.wrapper #search input {
+    width: 250px;
+    height: 100%;
+    outline: none;
+    border: none;
+    vertical-align: top;
+    padding-left: 15px;
+    font-size: 15px;
+    background: #886b41;
+    color: #fff;
+    border-bottom: 2px solid rgba(35,31,32,.5);
+}
+input::placeholder {
+    color: #fff;
+}
+input::-ms-clear {
+    display:none;
+}
+#search a {
+    background-image: url(../images/faq/btn_search.png);
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section {
+    width: 100%;
+    /*height: 100%;*/
+    padding-top: 200px;
+}
+section .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    padding-bottom: 120px;
+    background-color: #f4f4f4;
+}
+section .container h2 {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-left: 5%;
+    font-size: 22px;
+}
+
+#qList_wrap {
+    width: 100%;
+    position: relative;
+}
+.qList {
+    width: 60%;
+    margin: 0 auto;
+}
+.qList>li {
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+}
+.qList>li>a {
+    display:block;
+    background: rgb(35,31,32);
+    font-size: 16px;
+    padding: 15px 0;
+    padding-left: 5%;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+.qList>li>a>span {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    display:block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+.qList>li.selQ>a>span {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg) !important;
+    -ms-transform: translateY(-50%) rotate(45deg) !important;
+    -moz-transform: translateY(-50%) rotate(45deg) !important;
+    -o-transform: translateY(-50%) rotate(45deg) !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+}
+.qList>li .answer {
+    text-indent: 0;
+    display:none;
+    width: 100%;
+    /*height: 150px;*/
+    background:  rgba(136, 107, 65,.2);
+    color: rgb(35,31,32);
+    font-size: 14px ;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    word-break: keep-all;
+    line-height: 1.8;
+    letter-spacing: -.7px;
+}
+.qList>li .answer a {
+    color: rgb(35,31,32);
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.qList>li .answer a:hover {
+    color: #886b41;
+    text-decoration: underline;
+}
+
+
+
+
+#payment {
+    display:none;
+}
+
+/*footer CSS************************************************/
+footer {
+    width: 100%;
+    background: #000;
+}
+footer .inner_footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 1%;
+    padding-bottom: 70px;
+}
+.inner_footer .info {
+    width: 60%;
+    float: left;
+    color: #fff;
+    /*outline: 2px solid yellow;*/
+}
+.inner_footer .info .terms {
+    width: 96%;
+}
+.inner_footer .info .terms li {
+    display:inline-block;
+    margin-right: 1%;
+    padding-left: 2%;
+    position: relative;
+}
+.inner_footer .info .terms li:after {
+    content: "";
+    display:block;
+    width: 2px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.inner_footer .info .terms li:first-child {
+    padding: 0;
+}
+.inner_footer .info .terms li:first-child:after {
+    display:none;
+}
+
+.inner_footer .info .terms li a {
+    color: #fff;
+}
+.inner_footer .info .terms li a:hover {
+    color: rgb(214,162,57);
+}
+
+.inner_footer .info p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.inner_footer .logoSns {
+    width: 40%;
+    float: right;
+    text-align: center;
+    /*outline: 2px solid lime;*/
+}
+.inner_footer .logoSns .footerLogo {
+    width: 70%;
+    margin: 0 auto;
+}
+.inner_footer .logoSns .sns {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.inner_footer .logoSns .sns li {
+    width: 16%;
+    margin: 0 2%;
+    float: left;
+}
+.inner_footer .logoSns .sns li a {
+    display:block;
+}
+.inner_footer .logoSns .sns li a img {
+    height: 40px;
+}
+
+/*//footer CSS************************************************/

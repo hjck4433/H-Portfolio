@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+/*구글 웹폰트
+font-family: 'Bebas Neue', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /*overflow: hidden;*/
+    background: #f5f4f2;
+    color: rgb(35,31,32);
+}
+
+/*header CSS*/
+header {
+    width: 100%;
+    height: 140px;
+    background-color: rgb(35,31,32);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    font-size: 26px;
+}
+.inner_header {
+    width: 100%;
+    max-width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+#logo {
+    width: 15%;
+    height: 100px;
+    float: left;
+    /*outline: 3px solid lime;*/
+}
+#logo a {
+    display: inline-block;
+    height: 100px;
+    /*outline: 2px solid red;*/
+}
+#logo img {
+    height: 100px;
+    display: block;
+    
+}
+nav {
+    width: 75%;
+    height: 100px;
+    box-sizing: border-box;
+    float:left;
+}
+#gnb {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+#gnb>li {
+    width: 20%;
+    height: 100px;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    /*outline: 2px solid yellow;*/
+    position:relative;
+    box-sizing: border-box;
+}
+#gnb>li:last-child{
+    padding-right: 5%;
+}
+#gnb>li>a {
+    /*outline: 3px solid red;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    letter-spacing: .55px;
+}
+#gnb>li>a>span.txt, .selM>a>span.sel {
+    transition: all .6s ease-out;
+}
+
+/*선택된 메뉴 css*/
+.selM>a>span.txt {
+    position: relative;
+    /*outline: 3px solid lime;*/
+    z-index: 3;
+    font-size: 1.2em;
+    
+}
+.selM>a>span.sel {
+    width: 100%;
+    height: 46%;
+    position: absolute;
+    left: 3%;
+    top: 48%;
+    background-color: rgba(214,162,57,0.6);
+    /*outline: 3px solid yellow;*/
+    
+}
+
+/*slide down menu CSS*/
+.subM {
+    width: 100%;
+    position: absolute;
+    /*padding-bottom: 14px;*/
+    top: 100%;
+    left: 0;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -.9px;
+    background: rgb(35,31,32);
+    /*outline: 2px solid red;*/
+    display:none;
+    white-space: nowrap;
+    z-index: 10001;
+}
+/*#gnb>li:nth-child(4) #subM{
+    display: block;
+}*/
+
+.subM>li:hover {
+    background: rgb(214,162,57);
+}
+.subM>li>a {
+    display:block;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#lnb {
+    width: 10%;
+    height: 100px;
+    float: right;
+    text-align: right;
+    /*outline: 3px solid blue;*/
+    font-size: .6em;
+    padding-right: 1%;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    line-height: 100px;
+}
+.login {
+    color: rgb(255,255,255);
+    opacity: 0.6;
+    padding-right: 20%;
+}
+.login:hover {
+    opacity: 1;
+}
+#shopBag img {
+    position: relative;
+    top: 10px;
+}
+
+#depth {
+    width: 100%;
+    height: 40px;
+    float: left;
+    /*outline: 3px solid red;*/
+}
+#depth li {
+    width: 140px;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    background-color: #343131;
+    margin-right: 2px;
+}
+#depth li a {
+    display:block;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/*선택된 depth*/
+#depth li.selD {
+    background: #886b41;
+}
+#depth li:hover {
+    background: #886b41;
+}
+/*//header css********************************************************/
+
+
+.container {
+    padding-top: 140px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*main*****************************************************/
+
+main {
+    box-sizing: border-box;
+    /*display:none;*/
+    background-image: url(../images/effort/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right 92%;
+}
+
+main .container {
+    text-align: center;
+    position: relative;
+}
+
+main .container h1 {
+    padding-top: 100px;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 90px;
+    letter-spacing: -1.5px;
+}
+main .container img {
+    margin-bottom: 80px;
+}
+main .container p {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+main .container .scroll {
+    text-align:center;
+}
+main .container .scroll .bar{
+    width: 4px;
+    height: 50px;
+    /*outline: 1px solid red;*/
+    margin: 0 auto;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+main .container .scroll .inner{
+    width: 100%;
+    height: 100%;
+    display:block;
+    position: absolute;
+    top: 0;
+    background: rgb(35,31,32);
+}
+main .container .scroll>span {
+    font-size: 20px;
+    letter-spacing: -.5px;
+    font-weight: bold;
+}
+
+/*//main*****************************************************/
+
+/*section****************************************************/
+section {
+   /* display:none;*/
+    height: 77%;
+    overflow: hidden;
+}
+section .container {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.con-wrap {
+    /*position: absolute;
+    top: 200px;*/
+}
+section .container h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+section .container>p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+.con-wrap {
+    position: relative;
+}
+.con-wrap>li {
+    position: absolute;
+    transition: all .8s ease-in-out;
+    width: 600px;
+    height: 340px;
+}
+section .desc {
+    width: 600px;
+    height: 340px;
+    position: absolute;
+    top: 40px;
+    background: rgba(255,255,255);
+    box-sizing: border-box;
+    /*padding: 20px 30px;*/
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+section .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background: rgba(255,255,255,.8);
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+section .tit-wrap h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(214,162,57);
+}
+section .tit-wrap p{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+section .txt-wrap p{
+    font-size: 15px;
+    letter-spacing: .2px;
+    margin-bottom: 8px;
+    word-break: keep-all;
+}
+section .desc>.bgBox {
+    background: #000;
+    -webkit-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.bgBox img {
+    display:block;
+    opacity: .5;
+    -webkit-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+
+.con-wrap>li.box0 {
+    width: 600px;
+    height: 340px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); 
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.con-wrap>li.box0>.desc img {
+    opacity: 1;
+}
+.con-wrap>li.box0:hover .wrapper {
+    opacity: 1;
+    display:block;
+}
+
+.con-wrap>li.box1{
+    left: 0;
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    z-index: 5;
+}
+
+.con-wrap>li.box2{
+    left: 50%;
+    -webkit-transform: scale(.1);
+    -ms-transform: scale(.1);
+    -moz-transform: scale(.1);
+    -o-transform: scale(.1);
+    transform: scale(.1);
+    z-index: 3;
+}
+.con-wrap>li.box3{
+    left: 600px;
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    z-index:5;
+}
+
+.abtn {
+    position: relative;
+    top: 165px;
+    z-index: 20;
+}
+.abtn a {
+    position: absolute;
+    width: 55px;
+    height: 100px;
+    text-indent: -9999px;
+}
+.abtn a:hover {
+    background-position: top left;
+}
+.prev{
+    left: 150px;
+    background-image: url(../images/effort/prev.png);
+    background-repeat: no-repeat;
+    background-position: -62px top;
+}
+.next {
+    right: 150px;
+    background-image: url(../images/effort/next.png);
+    background-repeat:no-repeat;
+    background-position: -62px top;
+}
+/*//section****************************************************/
+
+/*footer CSS************************************************/
+footer {
+    width: 100%;
+    height: 23%;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+}
+footer .inner_footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 1%;
+    padding-bottom: 20px;
+}
+.inner_footer .info {
+    width: 60%;
+    float: left;
+    color: #fff;
+    /*outline: 2px solid yellow;*/
+}
+.inner_footer .info .terms {
+    width: 96%;
+}
+.inner_footer .info .terms li {
+    display:inline-block;
+    margin-right: 1%;
+    padding-left: 2%;
+    position: relative;
+}
+.inner_footer .info .terms li:after {
+    content: "";
+    display:block;
+    width: 2px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.inner_footer .info .terms li:first-child {
+    padding: 0;
+}
+.inner_footer .info .terms li:first-child:after {
+    display:none;
+}
+
+.inner_footer .info .terms li a {
+    color: #fff;
+}
+.inner_footer .info .terms li a:hover {
+    color: rgb(214,162,57);
+}
+
+.inner_footer .info p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.inner_footer .logoSns {
+    width: 40%;
+    float: right;
+    text-align: center;
+    /*outline: 2px solid lime;*/
+}
+.inner_footer .logoSns .footerLogo {
+    width: 70%;
+    margin: 0 auto;
+}
+.inner_footer .logoSns .sns {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.inner_footer .logoSns .sns li {
+    width: 16%;
+    margin: 0 2%;
+    float: left;
+}
+.inner_footer .logoSns .sns li a {
+    display:block;
+}
+.inner_footer .logoSns .sns li a img {
+    height: 40px;
+}
+
+/*//footer CSS************************************************/

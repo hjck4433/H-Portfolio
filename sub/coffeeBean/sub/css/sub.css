@@ -1,0 +1,274 @@
+@charset 'utf-8';
+
+@import url(header.css);
+@import url(footer.css);
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*flaot 해제를 위한 가상선택자*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 구글웹폰트
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Merriweather', serif;
+*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/***section****************************************************/
+section {
+    margin-top: 140px;
+}
+.location {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(105,81,157);
+}
+.location ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+.location ul li {
+    float: left;
+    background: url(../img/img_arr_location.png) no-repeat 0 center;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+.location ul li:first-child {
+    background: none;
+    padding-left: 0;
+}
+.location ul li a {
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.location ul li a:hover {
+    text-decoration: underline;
+}
+
+/***mainbanner***************************************************/
+.mainbanner {
+    width: 100%;
+}
+.mainbanner img {
+    width: 100%;
+}
+
+/***value********************************************************/
+.value {
+    width: 100%;
+}
+.value>ul {
+    width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    border-bottom: 1px solid rgb(105,81,157);
+    padding-bottom: 60px;
+    /*background-color: yellow;*/
+    overflow: hidden;
+}
+.value>ul>li {
+    float: left;
+    width: 340px;
+    background: url(../img/bg_plus_icon.gif) no-repeat;
+    background-position: 0px 60px;
+    margin: 0 -20px;
+}
+.value>ul>li:first-child {
+    background: none;
+}
+.value li img {
+    width: 160px;
+    display: block;
+    margin: 0 auto 25px;
+}
+.value dl {}
+.value dt {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(105,81,157);
+}
+.value dd {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgb(47,28,17)
+}
+.value dd.eng {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(105,81,157);
+    font-weight: 700;
+}
+
+/***best******************************************************/
+.best {
+    width: 100%;
+    /*background-color: lightpink;*/
+    margin-bottom: 80px;
+    text-align: center;
+}
+.best h3 {
+    font-size: 20px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+    font-weight: 100;
+}
+.best h2 {
+    margin-top: 30px;
+    font-size: 32px;
+    color: rgb(207,102,26);
+}
+
+.best .best-banner {
+    width: 100%;
+    height: 430px;
+    background: url(../img/bg_coffeebean-korea_banner02.jpg) no-repeat 50% 50%/100%;
+    margin-top: 60px;
+}
+
+/*coffee-wrap*********************************************/
+.coffee-wrap {
+    width: 100%;
+    margin-bottom: 80px;
+}
+.coffee-wrap .coffee {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.coffee-wrap .coffee h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: rgb(207,102,26);
+    letter-spacing: 1.2px;
+    background: url(../img/bg_bar6.gif) repeat-x 0 50%;
+}
+.coffee-wrap .coffee h2 span {
+    background: #fff;
+    padding: 0 30px;
+}
+.coffee-wrap .coffee h4 {
+    color: rgb(207,102,26);
+    margin-top: 30px;
+    font-size: 18px;
+}
+.coffee-wrap .coffee p {
+    margin-top: 30px;
+    color: rgb(51,51,51);
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+}
+
+.coffee ul {
+    margin: 30px auto 60px;
+    overflow: hidden;
+}
+.coffee ul li {
+    width: 380px;
+    float: left;
+    margin-right: 30px;
+}
+.coffee ul li:last-child {
+    margin-right: 0;
+}
+.coffee ul li img {
+    width: 100%;
+    transition: all .5s;
+}
+.coffee ul li:hover img {
+    opacity: .6;
+}
+
+/*cofee&tea 버튼 디자인 공통적용*/
+.btn {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: rgb(243,130,0);
+    padding: 0 50px;
+    line-height: 40px;
+    display: inline-block;
+}
+.btn a {
+    color: #fff;
+}
+ /***tea-wrap****************************************/
+.tea-wrap {
+    width: 100%;
+    margin-bottom: 80px;
+}
+.tea-wrap .tea {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.tea-wrap .tea h2 {
+    font-family: 'Merriweather', serif;
+    font-size; 2em;
+    color: rgb(207,102,26);
+    letter-spacing: 1.2px;
+    background: url(../img/bg_bar6.gif) repeat-x 0 50%;
+}
+.tea-wrap .tea h2 span {
+    background: rgb(255,255,255);
+    padding: 0 30px;
+}
+.tea-wrap .tea h4 {
+    color: rgb(207,102,26);
+    margin-top: 30px;
+    font-size: 18px;
+}
+.tea-wrap .tea p {
+    margin-top: 30px;
+    color: rgb(51,51,51);
+    line-height: 1.4;
+    letter-spacing: -.6;
+}
+.tea-wrap .tea ul {
+    margin: 30px auto 60px;
+    overflow: hidden;
+}
+.tea-wrap .tea ul li {
+    float: left;
+    width: 380px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.tea-wrap .tea ul li:last-child {
+    margin-right: 0;
+}
+.tea-wrap .tea ul li img {
+    float: left;
+    transition: all .5s;
+}
+.tea-wrap .tea ul li:hover img {
+    transform: scale(1.3);
+}
+
+
+
+

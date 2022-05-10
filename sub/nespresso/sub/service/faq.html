@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>FAQ | Nespresso</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--[if lt IE 9]>          
+	   <script src="js/html5shiv.js"></script>        
+    <![endif]-->
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/favicon.png">
+
+    <!--구글 웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/faq.css">
+
+    <!--js-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/faq.js"></script>
+</head>
+
+<body>
+   
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTKLDXD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   
+    <header>
+        <div class="inner_header clearfix">
+            <h1 id="logo"><a href="../../index.html"><img src="images/header_logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul id="gnb">
+                    <li>
+                        <a href="../nespresso/effort.html">
+                            <span class="txt">NESPRESSO</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../nespresso/effort.html">네스프레소의 노력</a></li>
+                            <li><a href="../nespresso/road.html">커피의 여정</a></li>
+                            <li><a href="../nespresso/green_moment.html">그린 모먼트</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../product/coffee.html">
+                            <span class="txt">Product</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../product/coffee.html">커피</a></li>
+                            <li><a href="../product/machine.html">머신</a></li>
+                            <li><a href="../product/accessories.html">악세사리</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../professional/solution.html">
+                            <span class="txt">Professional</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="../professional/solution.html">커피 솔루션</a></li>
+                            <li><a href="../professional/pro_product.html">프로페셔널 제품</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="selM now">
+                        <a href="find_store.html">
+                            <span class="txt">Service</span>
+                            <span class="sel"></span>
+                        </a>
+                        <ul class="subM">
+                            <li><a href="find_store.html">매장찾기</a></li>
+                            <li><a href="whats_new.html">What's New</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="../recipes/recipes.html">
+                            <span class="txt">Recipes</span>
+                            <span class="sel"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="lnb">
+                <a href="#" class="login">로그인</a>
+                <a href="#" id="shopBag"><img src="images/ico_bag.png" alt="장바구니"></a>
+            </div>
+
+            <ul id="depth">
+                <li><a href="find_store.html">매장찾기</a></li>
+                <li><a href="whats_new.html">What's New</a></li>
+                <li class="selD now"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <!--//inner_header-->
+
+        <div id="faqChoice">
+            <div class="wrapper">
+                <select id="list">
+                    <option value="top5">자주하는 질문 TOP5</option>
+                    <option value="payment">결제관련</option>
+                    <option value="vertuo">버츄오 라인</option>
+                    <option value="prod_info">제품 정보</option>
+                    <option value="order">주문 및 주문 확인</option>
+                    <option value="online_sup">온라인 지원</option>
+                    <option value="machine_sup">머신 지원</option>
+                    <option value="brand_promo">브랜드 및 프로모션</option>
+                    <option value="recycle">재활용</option>
+                </select>
+
+                <div id="search">
+                    <input type="text" placeholder="결제관련 선택 후 저장 검색"><a href="#" class="btnS"></a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <h2 id="Qname">자주하는 질문 TOP5</h2>
+            <div id="qList_wrap">
+                <ul class="qList">
+                    <li class="selQ">
+                        <a href="#">사용한 캡슐은 어떻게 재활용 하나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            네스프레소사이트에서 “재활용 백 수거” (무료) 를 장바구니에 담아 주세요.
+                            다른 제품을 구매하실 때, 택배기사님께서 구매 제품 배송을 해드리면서, 고객님이 사용하신 캡슐이 담긴 “재활용 백” 수거를 무료로 진행합니다. “재활용 백”을 받고 싶으시다면, 네스프레소 사이트에서 “재활용 백” (무료) 을 장바구니에 담아 주세요. 다른 제품을 구매하실 때, 구매 제품의 배송과 함께 “재활용 백”을 같이 배송해 드립니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">커피가 추출되지 않아요. 머신에 문제가 있는 걸까요?<span class="view">+</span></a>
+                        <div class="answer">
+                            머신에 에어락이 발생했을 수 있습니다. 에어락은 물이 흐르는 내부의 관에 공기방울이 들어가는 증상입니다. 이는 물통에 물이 없는 상태에서 강제추출을 시도하거나, 장기간 머신을 이용하지 않을때 발생합니다.
+                            캡슐을 제거하고 물이 가득찬 물통을 장착한 후, 룽고버튼을 눌러 커피추출구에서 온수가 나올때까지 확인 해 주십시오. 반복하셔야 합니다. 이는 몇차례의 시도가 필요할 수 있습니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">웹사이트에서 상품 구매한 건을 취소하고 싶습니다. 온라인 결제 취소는 어떻게 해야 하나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            네스프레소 온라인에서 구매한 상품의 취소는 네프프레소 클럽에서만 가능합니다. <br>
+                            번거로우시겠지만 네스프레소 클럽(365일 24시간 상담)으로 연락주시면 빠르게 취소해 드리겠습니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">[공지] 카드결제 방법 변경 안내<span class="view">+</span></a>
+                        <div class="answer">
+                            ① 결제수단 메뉴에서 신용카드 선택 후 카드 종류를 선택합니다. <br>
+                            ② 상세 카드 정보 입력 후, 할부 개월을 선택하고 하단의 『주문』 버튼을 클릭합니다. <br>
+                            -필수 항목을 입력하지 않는 경우,다음 단계로 이동할 수 없습니다.<br>
+                            ③ 주문 및 결제 금액을 확인 후, 네스프레소 판매약관을 체크한 다음 결제하기 버튼을 클릭합니다.<br>
+                            ④ 결제완료시 고객님의 거래내역은 [주문조회] 메뉴에서 확인 가능합니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">[버츄오 플러스] 커피 버튼 불빛이 반은 녹색 반은 빨간색인데 머신에 이상이 있는 건가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            <a href="https://www.nespresso.com/kr/ko/technical-support-usage#!/VertuoPlus/instructions/Descaling/video" target="blank">여기</a>를 통해 영상 확인 후 디스케일링을 진행하실 수 있습니다.
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="qList" id="payment">
+                    <li class="selQ">
+                        <a href="#">[공지] 카드결제 방법 변경 안내<span class="view">+</span></a>
+                        <div class="answer">
+                            ① 결제수단 메뉴에서 신용카드 선택 후 카드 종류를 선택합니다. <br>
+                            ② 상세 카드 정보 입력 후, 할부 개월을 선택하고 하단의 『주문』 버튼을 클릭합니다. <br>
+                            -필수 항목을 입력하지 않는 경우,다음 단계로 이동할 수 없습니다.<br>
+                            ③ 주문 및 결제 금액을 확인 후, 네스프레소 판매약관을 체크한 다음 결제하기 버튼을 클릭합니다.<br>
+                            ④ 결제완료시 고객님의 거래내역은 [주문조회] 메뉴에서 확인 가능합니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">카드 정보 저장하기는 필수인가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            카드정보 저장하기는 선택사항이며, 선택하지 않으셔도 결제 진행에 문제는 없습니다. 다만 선택하지 않을 시 다음 주문에 카드정보를 다시 입력하셔야 합니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">카드 정보는 몇 개까지 저장이 가능한가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            총 5개의 카드 저장이 가능하며, 저장된 카드를 교체하려면 기존 카드 중 한 개를 삭제한 후 추가하셔야 합니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">카드 정보는 삭제가능한가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            카드 정보 삭제 방법은 다음과 같습니다.
+                            <br>
+                            [로그인] → [장바구니 결제하기 클릭] → [결제진행하기 클릭] → [카드정보삭제]
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">할부개월을 잘못 입력했습니다. 어떻게 변경하나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            할부개월 변경 방법은 다음과 같습니다.
+                            <br><br>
+                            1) 신용카드 결제를 처음 하는 경우:
+                            카드결제 정보를 입력하고 하단의 할부 개월 수를 선택해 주시기 바랍니다. 다음 주문을 할 경우 할부 개월 수를 다시 선택해 주셔야 합니다. [숫자 1선택 시 일시불 진행]
+                            <br><br>
+                            2) 저장된 신용카드를 이용하는 경우:
+                            저장된 신용카드를 선택한 후 할부 개월 수를 선택해 주셔야 합니다.
+                            <br><br>
+                            3) 이미 결제가 완료된 경우:
+                            주문의 결제가 완료된 경우, 할부 개월 수 변경이 어려워 주문을 취소하고 재결제 하셔야 합니다. 불편하시더라도 네스프레소 클럽(080-734-1111/24시간)으로 연락해주시면 즉시 도와드리도록 하겠습니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">카드결제 영수증은 어떻게 받을 수 있나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            고객님이 직접 출력을 하실 경우 ‘네스프레소 공식 홈페이지 >  고객지원 > 결제 영수증 출력 페이지’에서 신용카드 번호 및 정보를 입력하시면 조회 후 출력이 가능합니다.
+                            <br>
+                            또한, 네스프레소 클럽(080-734-1111/24시간)으로 연락 주시어 요청하시면 당사 관리자 페이지에서 거래 건 조회 후 신용카드 영수증을 고객님의 이메일로 발송해 드립니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">신용카드' 결제 방법을 선택하면 카드 정보를 저장해야 되는데, 제 카드 정보는 안전한가요?<span class="view">+</span></a>
+                        <div class="answer">
+                           안심하고 사용하셔도 됩니다, 회원님. <br>
+                            회원님의 카드정보는 당사 홈페이지에 저장되는 것이 아니라 암호화하여 결제 대행사 서버에 안전하게 보관되고 있습니다. 저장하신 카드 정보는 글로벌 카드 보안 표준인 PCI DSS로 관리되고 있으며, 더 이상 사용을 원하지 않으실 경우에는 언제든지 삭제가 가능하오니 안심하시고 이용해주셔도 됩니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">신용카드 결제 방법이 복잡한데 다른 결제 방법은 없나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            결제 서비스 이용에 불편을 드려 죄송합니다.
+                            <br>
+                            네스프레소에서는 신용카드, 계좌이체, 휴대폰 소액 결제. 총 세가지의 결제 방식을 제공해 드리고 있습니다. 신용 카드 결제 방식은 한 번만 카드 정보를 등록해 두면, 이후에는 원클릭으로 간편하게 결제하실 수 있는 장점이 있는점 참조 부탁 드립니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">카드결제 인증 절차는 어떻게 되나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            카드결제를 이용하기 위해서는 본인확인 인증절차가 필요합니다.
+                            네스프레소 온라인에서는 아래 정보로 인증을 진행하고 있사오니 참고 부탁드립니다.
+                            <br><br>
+                            1) 카드번호<br>
+                            2) 비밀번호 앞 두자리<br>
+                            3) 카드소유자의 생년월일<br>
+                            <br>
+                            인증정보를 잘못 입력하실 경우 결제가 진행되지 않으므로 정확하게 입력해 주시길 바랍니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">유효기간을 잘못입력했는데 결제가 되었습니다.<span class="view">+</span></a>
+                        <div class="answer">
+                            유효기간을 잘못 입력하더라도 아래 세 가지 인증정보를 올바르게 입력하셨다면 결제가 진행됩니다.
+                            <br><br>
+                            1) 카드번호<br>
+                            2) 비밀번호 앞 두자리<br>
+                            3) 카드소유자의 생년월일<br>
+                            <br>
+                            카드 유효기간이 지나면 카드를 사용할 수 없지만 잘못입력한 경우에는 다른 인증 절차(카드번호, 비밀번호 앞 두자리, 소유자 생년월일)을 본인 인증이 완료되었기에 결제가 진행된 것입니다. 보안 인증 절차에는 문제가 없고 정상결제 된 것이기에 안심하셔도 됩니다. 그래도 유효 기간 정정을 원하시면 네스프레소 클럽(080-734-1111/24시간)으로 연락주시면 결제 취소 후 다시 결제를 진행해 주시기 바랍니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">해외카드로 결제가 가능한가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            죄송합니다. 네스프레소 신용카드 결제에서는 해외카드결제가 지원되지 않습니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">'간편결제'로 결제했는데, 지금은 안보여요. 에러인가요?<span class="view">+</span></a>
+                        <div class="answer">
+                            에러가 아닙니다. 회원님, <br>
+                            보다 원활한 주문 서비스를 제공해 드리고자 이번에 결제시스템을 개편 하였습니다.
+                            카드 결제를 원하실 경우, 이제부터는 '신용카드' 결제모드를 선택하셔서 결제하실 수 있습니다.
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">'간편결제'에서 Payco 결제를 했었는데, 이제는 Payco로 결제 못하나요?<span class="view">+</span></a>
+                        <div class="answer">
+                            결제 서비스 이용에 불편을 드려 죄송합니다. <br>
+                            앱 결제 시스템 개편으로, 앱에서 결제하실 때에는 Payco (또는 신용카드 포인트)를 더 이상 사용하실 수 없습니다. 대신, 신용카드 결제모드를 이용하시면 1회 등록 후 원클릭으로 간편하게 결제하실 수 있는 점 참고 부탁 드립니다.
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner_footer clearfix">
+            <div class="info">
+                <ul class="terms">
+                    <li><a href="#">판매이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">쿠키</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+
+                <p>
+                    상호: 네슬레코리아 유한책임회사 | 대표자: 카스텐 퀴메 | 사업자등록번호: 110-86-10100<br>
+                    통신판매업신고: 2014-서울서대문-0247 | 채무지급보증안내 | 대표번호:080-734-1111<br>
+                    이메일:club.korea@nespresso.com | 주소: 서울시 서대문구 충정로70 웨스트게이트타워 16층
+                </p>
+
+                <p>
+                    Nespresso S.A. 2021
+                </p>
+            </div>
+
+            <div class="logoSns">
+                <img src="images/footer_logo_white.png" alt="로고" class="footerLogo">
+                <ul class="sns">
+                    <li><a href="#"><img src="images/footer_sns_facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/footer_sns_pinterest.png" alt="핀터레스트"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
